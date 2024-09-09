@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #f3e5f5);
+  color: #333;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #4a148c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+/* Layout Container */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #8e24aa, #ab47bc);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 8px 20px rgba(142, 36, 170, 0.3);
+  transform: scale(1.05);
+}
+
+/* Page Cards */
+.page-card {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  margin: 50px auto;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.page-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #8e24aa, #ab47bc);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ab47bc, #ba68c8);
+  box-shadow: 0 10px 25px rgba(186, 104, 200, 0.3);
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  color: #aaa;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="password"], textarea, select {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 10px rgba(142, 36, 170, 0.4);
+}
+
+/* Quiz Section */
+.quiz-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.quiz-section h1 {
+  font-size: 26px;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.timer-feedback {
+  font-size: 20px;
+  color: #4a148c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a148c;
+  margin: 20px 0;
+}
+
+/* Custom Quiz Creation Form */
+.add-question-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-top: 30px;
+}
+
+.add-question-section h2 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.add-question-section label {
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.add-question-section input, .add-question-section textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.add-question-section input:focus, .add-question-section textarea:focus {
+  box-shadow: 0 0 10px rgba(142, 36, 170, 0.4);
+}
+
+.add-question-section button {
+  margin-top: 20px;
+}
+
+/* Question List Styles */
+.questions-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.questions-preview h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a148c;
+  margin-bottom: 25px;
+}
+
+.question-item {
+  background-color: #f3e5f5;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(142, 36, 170, 0.1);
+}
+
+.question-item p {
+  margin: 0;
+  font-size: 18px;
+  color: #4a148c;
+}
+
+.correct-answer {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.incorrect-answer {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: #8e24aa;
+  color: white;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 15px;
+  }
+
+  .page-card {
+    padding: 30px;
+  }
+
+  .quiz-section {
+    padding: 20px;
+  }
+}
